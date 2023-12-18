@@ -23,6 +23,7 @@ h6 {
   color: var(--headingBlack);
 }
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 }
@@ -34,9 +35,10 @@ li {
 
 :root{
     --headingFontFamily: "Oswald", sans-serif;
-    --headingBlack: #001659;
-    --headingWhite: #FFF;
+    --primaryColor: #161616;
+    --headingBlack: #53545A;
     --commonBtn:#FFBB00;
+    /* --headingBlack: #001659; */
 }
 
 /* Common CSS Started */
@@ -44,7 +46,7 @@ li {
     font-family: var(--headingFontFamily);
     font-size: 14px;
     font-weight: 500;
-    color: #161616;
+    color: var(--primaryColor);
     text-transform: uppercase;
     background-color: var(--commonBtn);
     padding: 21px 38px 20px;
@@ -63,6 +65,12 @@ li {
     color: #fff;
     background-color: var(--headingBlack);
 }
+.pageHeadding{
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
 /* Common CSS Ended */
 
 /* Header Section Started */
@@ -76,6 +84,9 @@ li {
 .logoHead{
     width: 144px;
     height: 44px;
+}
+.nav{
+  gap: 140px;
 }
 .mainManuItem{
     padding: 25px 20px;
@@ -105,7 +116,23 @@ li {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+#banner .pageHeadding{
+  color: #fff;
+  margin-bottom: 60px;
+}
+.bannerAsideWrapper{
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -moz-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  -o-transform: rotate(-90deg) translateY(-50%);
+}
+.bannerItems{
+  font-family: var(--headingFontFamily);
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 
 
