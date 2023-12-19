@@ -1,3 +1,10 @@
+/**
+* File Type: Custom CSS
+* Author: Ramen Biswas
+* Author Website: http://www.___________________
+* Author Email: printrb72@gmail.com
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: "Oswald", sans-serif;
-  color: var(--headingBlack);
+  color: var(--primaryColor);
 }
 a {
   display: inline-block;
@@ -36,9 +43,9 @@ li {
 :root{
     --headingFontFamily: "Oswald", sans-serif;
     --primaryColor: #161616;
-    --headingBlack: #53545A;
     --commonBtn:#FFBB00;
-    /* --headingBlack: #001659; */
+    --commonBtnHover:#001659;
+    --borderDelete: 1px dotted red;
 }
 
 /* Common CSS Started */
@@ -63,7 +70,7 @@ li {
 }
 .commonBtn:hover{
     color: #fff;
-    background-color: var(--headingBlack);
+    background-color: var(--commonBtnHover);
 }
 .pageHeadding{
   font-size: 130px;
@@ -71,6 +78,13 @@ li {
   line-height: 100%;
   text-transform: uppercase;
 }
+.sectionTitle{
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
 /* Common CSS Ended */
 
 /* Header Section Started */
@@ -88,10 +102,10 @@ li {
 .nav{
   gap: 140px;
 }
-.mainManuItem{
+.mainMenuItem{
     padding: 25px 20px;
 }
-.mainManuItemText{
+.mainMenuItemText{
     font-family: var(--headingFontFamily);
     font-size: 15px;
     color: #fff;
@@ -102,7 +116,7 @@ li {
     -ms-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
 }
-.mainManuItemText:hover{
+.mainMenuItemText:hover{
     color: var(--commonBtn);
 }
 /* Header Section Ended */
@@ -133,28 +147,432 @@ li {
   color: #fff;
   text-transform: uppercase;
 }
-
-
-
+.bannerAside{
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+.bannerAsideWrapper {
+  margin: 0;
+  position: absolute;
+  left: -100px;
+  top: -160px;
+}
 /* Banner CSS Ended */
 
+/* OUR AGENCY CSS Started */
+.agencyImg {
+  width: 590px;
+}
+.year{
+  font-size: 50px;
+  font-weight: 600;
+  color: #001659;
+}
+.agencyPlay i{
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 50px;
+  color: var(--commonBtn);
+  border: 1px solid var(--commonBtn);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.agencyToolsItems li{
+  line-height: 2;
+  position: relative;
+}
+.agencyToolsItems li i{
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--commonBtn);
+  margin-right: 8px;
+  border: 1px solid var(--commonBtn);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
+/* OUR AGENCY CSS Ended */
 
+/* SERVICE CSS Started */
+#service{
+  background-color: var(--primaryColor);
+  padding: 100px 0;
+}
+.card{
+  background: #1F2124;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#service .sectionTitle{
+  color: #fff;
+}
+.serviceCardFirstPara{
+  color: #fff;
+}
+.serviceCardHeadImage{
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+.serviceNumber{
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF4D;
+  position: relative;
+  margin-top: -20px;
+  padding-right: 10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.serviceNumber::after{
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--primaryColor);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  -webkit-transform: translate(100%, -50%);
+  -moz-transform: translate(100%, -50%);
+  -ms-transform: translate(100%, -50%);
+  -o-transform: translate(100%, -50%);
+  visibility: hidden;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.serviceCardTitle{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.serviceCardPara{
+  color: #EEE;
+  margin: 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.card:hover{
+  background-color: var(--commonBtn);
+}
+.card:hover .serviceNumber{
+  color: var(--primaryColor);
+}
+.card:hover .serviceCardTitle{
+  color: var(--primaryColor);
+}
+.card:hover .serviceCardPara{
+  color: var(--primaryColor);
+}
+.card:hover .serviceNumber::after{
+  visibility: visible;
+}
+/* SERVICE CSS Ended */
 
+/* BRAND CSS Started */
+.skill span{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  position: relative;
+}
+.skill span:nth-child(1)::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--commonBtn);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.skill span:nth-child(2)::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--commonBtn);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.brandSkillPara::before{
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--commonBtn);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.globalClientTitle{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  background: #fff;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.brandGlobalClientLogo{
+  width: 85px;
+  height: 85px;
+}
+.brandImage{
+  width: 490px;
+  object-fit: cover;
+  align-items: self-end;
+}
+.brandImageOverlay {
+  display: inline-block;
+  background: var(--commonBtn);
+  padding: 20px 40px;
+  margin: 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  -webkit-transform: translate(30%, -50%) rotate(-90deg);
+  -moz-transform: translate(-50%, -50%) rotate(-90deg);
+  -ms-transform: translate(-50%, -50%) rotate(-90deg);
+  -o-transform: translate(-50%, -50%) rotate(-90deg);
+}
+.brandImageOverlay span{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primaryColor);
+  text-transform: capitalize;
+  margin: 0;
+}
+.brndImageOverlayTitle{
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--primaryColor);
+  margin: 0;
+}
+/* BRAND CSS Ended */
 
+/* TEAM CSS Started */
+#team{
+  background: #f6f6f6;
+}
+/* .teamMembers{
+  display: inline-flex;
+} */
+.teamMemberImg{
+  width: 38px;
+  height: 38px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+}
+.teamMemberImg:nth-child(2){
+  margin-left: -10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.teamMemberImg:nth-child(3){
+  margin-left: -10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.teamMemberImg:nth-child(4){
+  margin-left: -10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
 
+.teamMembers:hover .teamMemberImg:nth-child(2){
+  margin-left: 3px;
+}
+.teamMembers:hover .teamMemberImg:nth-child(3){
+  margin-left: 3px;
+}
+.teamMembers:hover .teamMemberImg:nth-child(4){
+  margin-left: 3px;
+}
 
+.teamMemberOverlay{
+  background: rgba(255, 187, 0, 0.70);
+  opacity: 0;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.teamMemberFullImageWrapper:hover .teamMemberOverlay{
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+  -webkit-transform: scale(1) rotate(360deg);
+  -moz-transform: scale(1) rotate(360deg);
+  -ms-transform: scale(1) rotate(360deg);
+  -o-transform: scale(1) rotate(360deg);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.teamMemberOverlay h4{
+  font-size: 22px;
+  font-weight: 700;
+}
+.teamMemberOverlay p{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
 
+.socialMedia i{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--commonBtnHover);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.socialMedia i:hover{
+  color: #fff;
+  cursor: pointer;
+  margin-top: -10px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* TEAM CSS Ended */
 
-
-
-
-
-
-
-
-
-
+/* PROJECT CSS Started */
+.projectImageContent{
+  width: 87%;
+  display: inline-block;
+  background: #FFF;
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  opacity: 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.projectImageTitle{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+}
+.projectImageContent i{
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  color: #9F9F9F;
+  border: 1px solid #EEEEEE;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.projectImageContent i:hover{
+  color: var(--commonBtn);
+  border: 1px solid var(--commonBtn);
+  cursor: pointer;
+}
+.projectImageWrapper{
+  overflow: hidden;
+}
+.projectImageWrapper:hover .projectImageContent{
+  opacity: 1;
+  left: 0;
+}
+/* PROJECT CSS Ended */
 
 
 
